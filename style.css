@@ -14,13 +14,34 @@ header .logo{
   
 
 }
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  max-width:100%;
+}
+.row{
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .row{
+      margin-left: 0;
+      margin-right: 0;
+  }
+   
+}
+
+
 
 @media screen and (max-width: 800px) {
     #flex { display: flex; 
         flex-direction: row; }
     #logo-id { order: 2; }
     #mynav-bar { order: 1; }
-    /* #search-icon { order: 3; } */
+    #search-icon { order: 3; }
    
 }
 
@@ -61,7 +82,7 @@ a{
 
 
 .img-max {
-    max-width: 1400px;
+    /* max-width: 1400px; */
     width:100%;
   }
 
@@ -84,7 +105,7 @@ a{
 }
 
 .footerbox a{
-    font-size: 1em;
+    font-size: 1rem;
     color: grey;
 
 
@@ -109,7 +130,5 @@ a:not([class]):hover {
 
 .footerlast{
     background-color: #f2f2f2;
-    height: 7rem;
-    line-height: 1.5rem;
-   
+
 }
